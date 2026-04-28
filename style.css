@@ -1,0 +1,203 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* HEADER */
+header{
+    background: #111827;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1{
+    margin-bottom: 5px;
+}
+
+.sub{
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* LAYOUT */
+.layout{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* SIDEBAR */
+.sidebar{
+    width: 300px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    height: fit-content;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.sidebar h2{
+    margin-bottom: 10px;
+}
+
+.carrinho{
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* botão VER CARRINHO */
+.carrinho button{
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    background: #2563eb;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.carrinho button:hover{
+    background: #1d4ed8;
+}
+
+/* lista de itens do carrinho */
+#listaCarrinho{
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+#listaCarrinho li{
+    font-size: 13px;
+    padding: 4px 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* botão remover item */
+.remove{
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+/* menu categorias sidebar */
+.sidebar ul{
+    list-style: none;
+    margin-top: 10px;
+}
+
+.sidebar li{
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.sidebar a{
+    text-decoration: none;
+    color: #333;
+}
+
+.sidebar a:hover{
+    color: #2563eb;
+}
+
+/* CONTEÚDO */
+.conteudo{
+    flex: 1;
+}
+
+.conteudo h2{
+    margin-bottom: 20px;
+}
+
+.conteudo h3{
+    margin: 25px 0 15px;
+    color: #555;
+}
+
+/* PRODUTOS */
+.produtos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.produto{
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.produto h4{
+    margin-bottom: 8px;
+}
+
+.produto p{
+    font-size: 14px;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+.produto span{
+    display: block;
+    font-weight: bold;
+    color: #16a34a;
+    margin-bottom: 12px;
+}
+
+/* botão ADICIONAR */
+.add{
+    width: 100%;
+    padding: 8px;
+    border: none;
+    background: #16a34a;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.add:hover{
+    background: #15803d;
+}
+
+/* FOOTER */
+.rodape{
+    text-align: center;
+    padding: 20px;
+    background: #111827;
+    color: white;
+    margin-top: 30px;
+}
+
+.rodape p{
+    margin: 4px 0;
+}
+
+/* RESPONSIVO */
+@media(max-width: 768px){
+    .layout{
+        flex-direction: column;
+    }
+    .sidebar{
+        width: 100%;
+    }
+}

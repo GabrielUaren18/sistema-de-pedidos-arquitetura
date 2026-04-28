@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casa della Pizza</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="topo">
+  <h1>🍕 Casa della Pizza - Tibiquari</h1>
+  <p class="sub">Sistema de pedidos online</p>
+</header>
+
+<div class="layout">
+
+  <aside class="sidebar">
+
+    <h2 id="qtdCarrinho">0 🛒 Carrinho</h2>
+
+    <div class="carrinho">
+      <ul id="listaCarrinho"></ul>
+      <h3 id="subtotal">Subtotal: R$ 0</h3>
+      <button id="btnCarrinho">VER CARRINHO</button>
+    </div>
+
+    <hr>
+
+    <h3>Categorias</h3>
+    <ul>
+      <li><a href="#combos">Combos</a></li>
+      <li><a href="#pizzas-p">Pizzas - P</a></li>
+      <li><a href="#pizzas-m">Pizzas - M</a></li>
+      <li><a href="#pizzas-g">Pizzas - G</a></li>
+      <li><a href="#pizzas-gg">Pizzas - GG</a></li>
+      <li><a href="#brotinho">Brotinho</a></li>
+      <li><a href="#sanduiches">Sanduíches</a></li>
+      <li><a href="#hamburgueres">Hambúrgueres</a></li>
+      <li><a href="#sucos">Sucos</a></li>
+      <li><a href="#refrigerantes">Refrigerantes</a></li>
+    </ul>
+
+  </aside>
+
+  <main class="conteudo">
+
+    <h2>Nosso Cardápio</h2>
+
+    <!-- COMBOS -->
+    <h3 id="combos">~~~~~~~~ COMBOS ~~~~~~~~</h3>
+    <div class="produtos">
+
+      <div class="produto">
+        <h4>Combo Classic Burguer</h4>
+        <p>Hambúrguer artesanal + acompanhamentos</p>
+        <span>R$ 40,00</span>
+        <button class="add" data-nome="Combo Classic Burguer" data-preco="40">Adicionar</button>
+      </div>
+
+      <div class="produto">
+        <h4>Combo Supremo</h4>
+        <p>Duplo hambúrguer artesanal</p>
+        <span>R$ 48,00</span>
+        <button class="add" data-nome="Combo Supremo" data-preco="48">Adicionar</button>
+      </div>
+
+    </div>
+
+    <!-- PIZZAS P -->
+    <h3 id="pizzas-p">~~~~~~~~ PIZZAS - P ~~~~~~~~</h3>
+    <div class="produtos">
+
+      <div class="produto">
+        <h4>Pizza P Margherita</h4>
+        <p>Molho, mussarela e manjericão</p>
+        <span>R$ 25,00</span>
+        <button class="add" data-nome="Pizza P Margherita" data-preco="25">Adicionar</button>
+      </div>
+
+      <div class="produto">
+        <h4>Pizza P Calabresa</h4>
+        <p>Calabresa, cebola e azeitona</p>
+        <span>R$ 25,00</span>
+        <button class="add" data-nome="Pizza P Calabresa" data-preco="25">Adicionar</button>
+      </div>
+
+    </div>
+
+    <!-- PIZZAS M -->
+    <h3 id="pizzas-m">~~~~~~~~ PIZZAS - M ~~~~~~~~</h3>
+    <div class="produtos">
+
+      <div class="produto">
+        <h4>Pizza M Margherita</h4>
+        <p>Molho, mussarela e manjericão</p>
+        <span>R$ 35,00</span>
+        <button class="add" data-nome="Pizza M Margherita" data-preco="35">Adicionar</button>
+      </div>
+
+      <div class="produto">
+        <h4>Pizza M Quatro Queijos</h4>
+        <p>Mussarela, parmesão, provolone e catupiry</p>
+        <span>R$ 39,00</span>
+        <button class="add" data-nome="Pizza M Quatro Queijos" data-preco="39">Adicionar</button>
+      </div>
+
+    </div>
+
+    <!-- PIZZAS G -->
+    <h3 id="pizzas-g">~~~~~~~~ PIZZAS - G ~~~~~~~~</h3>
+    <div class="produtos">
+
+      <div class="produto">
+        <h4>Pizza G Calabresa</h4>
+        <p>Calabresa, cebola e azeitona</p>
+        <span>R$ 45,00</span>
+        <button class="add" data-nome="Pizza G Calabresa" data-preco="45">Adicionar</button>
+      </div>
+
+      <div class="produto">
+        <h4>Pizza G Quatro Queijos</h4>
+        <p>Mussarela, parmesão, provolone e catupiry</p>
+        <span>R$ 50,00</span>
+        <button class="add" data-nome="Pizza G Quatro Queijos" data-preco="50">Adicionar</button>
+      </div>
+
+    </div>
+
+    <!-- PIZZAS GG -->
+    <h3 id="pizzas-gg">~~~~~~~~ PIZZAS - GG ~~~~~~~~</h3>
+    <div class="produtos">
+
+      <div class="produto">
+        <h4>Pizza GG Margherita</h4>
+        <p>Molho, mussarela e manjericão</p>
+        <span>R$ 55,00</span>
+        <button class="add" data-nome="Pizza GG Margherita" data-preco="55">Adicionar</button>
+      </div>
+
+      <div class="produto">
+        <h4>Pizza GG Quatro Queijos</h4>
+        <p>Mussarela, parmesão, provolone e catupiry</p>
+        <span>R$ 62,00</span>
+        <button class="add" data-nome="Pizza GG Quatro Queijos" data-preco="62">Adicionar</button>
+      </div>
+
+    </div>
+
+    <!-- BROTINHO -->
+    <h3 id="brotinho">~~~~~~~~ BROTINHO ~~~~~~~~</h3>
+    <div class="produtos">
+
+      <div class="produto">
+        <h4>Brotinho Calabresa</h4>
+        <p>Calabresa, cebola e azeitona</p>
+        <span>R$ 18,00</span>
+        <button class="add" data-nome="Brotinho Calabresa" data-preco="18">Adicionar</button>
+      </div>
+
+      <div class="produto">
+        <h4>Brotinho Chocolate</h4>
+        <p>Chocolate ao leite com granulado</p>
+        <span>R$ 20,00</span>
+        <button class="add" data-nome="Brotinho Chocolate" data-preco="20">Adicionar</button>
+      </div>
+
+    </div>
+
+    <!-- SANDUÍCHES -->
+    <h3 id="sanduiches">~~~~~~~~ SANDUÍCHES ~~~~~~~~</h3>
+    <div class="produtos">
+
+      <div class="produto">
+        <h4>Bauru</h4>
+        <p>Rosbife, mussarela, tomate e pepino</p>
+        <span>R$ 22,00</span>
+        <button class="add" data-nome="Bauru" data-preco="22">Adicionar</button>
+      </div>
+
+      <div class="produto">
+        <h4>Misto Quente</h4>
+        <p>Presunto e queijo na chapa</p>
+        <span>R$ 15,00</span>
+        <button class="add" data-nome="Misto Quente" data-preco="15">Adicionar</button>
+      </div>
+
+    </div>
+
+    <!-- HAMBÚRGUERES -->
+    <h3 id="hamburgueres">~~~~~~~~ HAMBÚRGUERES ARTESANAIS ~~~~~~~~</h3>
+    <div class="produtos">
+
+      <div class="produto">
+        <h4>Classic Burguer</h4>
+        <p>Carne 120g, alface, tomate e maionese</p>
+        <span>R$ 28,00</span>
+        <button class="add" data-nome="Classic Burguer" data-preco="28">Adicionar</button>
+      </div>
+
+      <div class="produto">
+        <h4>Supremo</h4>
+        <p>Duplo hambúrguer artesanal 180g</p>
+        <span>R$ 38,00</span>
+        <button class="add" data-nome="Supremo" data-preco="38">Adicionar</button>
+      </div>
+
+    </div>
+
+    <!-- SUCOS -->
+    <h3 id="sucos">~~~~~~~~ SUCOS ~~~~~~~~</h3>
+    <div class="produtos">
+
+      <div class="produto">
+        <h4>Suco de Laranja</h4>
+        <p>Natural, 500ml</p>
+        <span>R$ 8,00</span>
+        <button class="add" data-nome="Suco de Laranja" data-preco="8">Adicionar</button>
+      </div>
+
+      <div class="produto">
+        <h4>Suco de Maracujá</h4>
+        <p>Natural, 500ml</p>
+        <span>R$ 8,00</span>
+        <button class="add" data-nome="Suco de Maracujá" data-preco="8">Adicionar</button>
+      </div>
+
+    </div>
+
+    <!-- REFRIGERANTES -->
+    <h3 id="refrigerantes">~~~~~~~~ REFRIGERANTES ~~~~~~~~</h3>
+    <div class="produtos">
+
+      <div class="produto">
+        <h4>Coca-Cola Lata</h4>
+        <p>350ml</p>
+        <span>R$ 6,00</span>
+        <button class="add" data-nome="Coca-Cola Lata" data-preco="6">Adicionar</button>
+      </div>
+
+      <div class="produto">
+        <h4>Guaraná Antarctica</h4>
+        <p>Lata 350ml</p>
+        <span>R$ 6,00</span>
+        <button class="add" data-nome="Guaraná Antarctica" data-preco="6">Adicionar</button>
+      </div>
+
+    </div>
+
+  </main>
+
+</div>
+
+<footer class="rodape">
+  <p>Atividade Acadêmica</p>
+  <p>Gabriel Uaren | ADS - IFCE Campus Boa Viagem | 2026</p>
+</footer>
+
+<!-- sem type="module" pra funcionar direto -->
+<script src="./src/main.js"></script>
+
+
+</body>
+</html>
