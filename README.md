@@ -1,6 +1,6 @@
 \# Sistema de Pedidos \- Casa della Pizza
 
-Projeto desenvolvido para a disciplina de Arquitetura de Sistemas do IFCE Campus Boa Viagem.
+Projeto desenvolvido para a disciplina de Arquitetura de Sistemas do IFCE Campus Boa Viagem. PROFESSOR: Renato William
 
 O sistema simula uma pizzaria online, permitindo adicionar produtos ao carrinho, remover itens e enviar pedidos pelo WhatsApp.
 
