@@ -1,4 +1,4 @@
-\# Sistema de Pedidos \- Casa della Pizza
+\# Sistema de Pedidos \- Casa della Pizza (ORIGINAL DA ITÁLIA)
 
 Projeto desenvolvido para a disciplina de Arquitetura de Sistemas do IFCE Campus Boa Viagem. PROFESSOR: Renato William
 
